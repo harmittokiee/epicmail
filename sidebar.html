@@ -1,34 +1,157 @@
 <html>
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 <title>EPIC MAIL</title>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="sidebar.css">
-<script src=" "></script>
+<link rel="stylesheet" href="sidebar1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+</style>
 </head>
 <body>
 
-	<div class="wrapper"> 
-       <div class="sidebar">
-       	<h2>EPIC MAIL</h2>
-       	<ul>
-         <li><a href="#"><i class="fas fa-envelope"></i>Inbox</a></li>
-         <li><a href="#"><i class="fas fa-circle"></i>Unread</a></li>
-         <li><a href="#"><i class="fas fa-star"></i>Starred</a></li>
-         <li><a href="#"><i class="fas fa-clipboard-list"></i>Draft</a></li>
-         <li><a href="#"><i class="fas fa-paper-plane"></i>Sent</a></li>
-         <li><a href="#"><i class="fas fa-times-circle"></i>Spam</a></li>
-         <li><a href="#"><i class="fas fa-trash"></i>Trash</a></li> 
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#"><i class="fas fa-envelope"></i>&nbspInbox</a>
+  <a href="#"><i class="fas fa-circle"></i>&nbspUnread</a>
+  <a href="#"><i class="fas fa-star"></i>&nbspStarred</a>
+  <a href="#"><i class="fas fa-clipboard-list"></i>&nbspDraft</a>
+   <a href="#"><i class="fas fa-paper-plane"></i>&nbspSent</a>
+    <a href="#"><i class="fas fa-times-circle"></i>&nbspSpam</a>
+     <a href="#"><i class="fas fa-trash"></i>&nbspTrash</a>
+</div>
 
-       	</ul>
+<div class="main-content" id="main">
+    
+    <div class="row">
+      <div >
+  <button class="openbtn" onclick="openNav()">☰</button>  
 </div>
-</div>
+<div class="email">
+      <img class="email" src="open-email.png"><p><div class="epicmail2">&nbsp&nbspEPIC MAIL</div></p>
+       <input type ="text"  class ="search-bar" class="fa fa-search" placeholder="Search email" >
+    </div>
+    <img src=" information.png"  class="information">
+    </div>
+
+    <div class="row">
+      <div class="cell">
+        <input type="checkbox" >&nbsp<i class="fa fa-caret-down"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-refresh"></i>
+      </div>
+      <div class="cell">
+          
+      </div>
+      <div class="cell">
+         <i class="fa fa-angle-left"></i></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-angle-right"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-keyboard-o"></i>&nbsp&nbsp<i class="fa fa-caret-down"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gear"></i>
+      </div>
+    </div>
+    <div class="main-content">
+    
+    
+      <div class="row2">
+      <div class="cell">
+        <p>&nbsp&nbsp<i class="fas fa-envelope"></i>&nbspPrimary</p>
+      </div>
+      <div class="cell">
+          <p><img src="friends.png">&nbspSocial</p>
+      </div>
+      <div class="cell">
+      </div>
+    </div>
+  </div>
+
+
+      <div class="row3">
+      <div class="cell">
+        <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+      </div>
+  
+
+
+      <div class="row4">
+      <div class="cell">
+         <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  
+
+
+      <div class="row5">
+      <div class="cell">
+        <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  
+
+
+      <div class="row6">
+      <div class="cell">
+  <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  
+
+
+      <div class="row7">
+      <div class="cell">
+ <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
        
-       <div class="inbox">
-         
+      </div>
+    </div>
+  
 
-       </div>
 
+      <div class="row8">
+      <div class="cell">
+<input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  
+
+
+      <div class="row10">
+      <div class="cell">
+<input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  
+
+
+      <div class="row11">
+      <div class="cell">
+       <input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+
+      </div>
+    </div>
+  
+
+
+      <div class="row12">
+      <div class="cell">
+<input type="checkbox" >&nbsp<i class="fa fa-star-o"></i>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
 </body>
-</html>
+</html> 
