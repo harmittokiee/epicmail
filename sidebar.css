@@ -2,6 +2,25 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.button {
+  background-color: #666666; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 33px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 25px;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 .sidebar {
   height: 100%;
@@ -14,27 +33,46 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+
+}
+
+.user1{
+  height: 20px;
+  margin-top: 5px;
+   padding-left: 10px;
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 15px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
-  color: #1c8adb;
+  color: #666666;
   display: block;
   transition: 0.3s;
+
 }
 
 .sidebar a:hover {
   color: gray;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+ 
+
+ .cell{
+  font-size:20px ;
+  color:gray;
+ }
 
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: 10px;
+  font-size: 25px;
   margin-left: 50px;
+  padding: 10px;
+  border-radius: 30px;
+
+
 }
 
 .openbtn {
@@ -44,10 +82,13 @@ body {
   color: black;
   padding: 10px 15px;
   border: none;
+
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #f9f9f9;
+
+
 }
 
 #main {
@@ -66,46 +107,71 @@ body {
   flex-direction: row;
   height: 35px;
   padding-left: 10px;
+  margin-left: -200px;
   
 }
 
 .epicmail2{
   margin-top: 10px;
-  color:  #1c8adb;
+  color:  #666666;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .information{
   height: 20px;
-  margin-left: 300px;
   margin-top: 5px;
+
 }
 .email input.search-bar {
     margin-left: 100px;
     width: 500px;
     border-radius: 6px;
-    background: #e6e6e6;
+    background: #f9f9f9;
     border:none;
 }
 
 .row {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space;
+  justify-content: space-between;
   margin: 0px;
-
+   
 }
 
 .row .cell {
   width: 100%;
-  background: #f9f9f9;
+  background: white;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 
 }
 
 .row .cell: nth-of-type(2) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-top: solid 1px lightgray;
+
+}
+
+.row1 .cell1 {
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+  border-bottom: solid 1px lightgray;
+}
+
+.row1 .cell1: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -115,39 +181,41 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row2 .cell {
+.row2 .cell2 {
   width: 100%;
-  background: #f9f9f9;
+  background: #fff;
   padding: 5px;
-  border-bottom: solid 1px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row2 .cell: nth-of-type(2) {
+.row2 .cell2: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
+
+
 
 .row3 {
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row3 .cell {
+.row3 .cell3 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row3 .cell: nth-of-type(2) {
+.row3 .cell3: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -157,18 +225,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row4 .cell {
+.row4 .cell4 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row4 .cell: nth-of-type(2) {
+.row4 .cell4: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -178,18 +246,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row5 .cell {
+.row5 .cell5 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row5 .cell: nth-of-type(2) {
+.row5 .cell5: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -199,18 +267,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row6 .cell {
+.row6 .cell6 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row6 .cell: nth-of-type(2) {
+.row6 .cell6: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -220,18 +288,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row7 .cell {
+.row7 .cell7 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row7 .cell: nth-of-type(2) {
+.row7 .cell7: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -241,18 +309,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left:  0px;
 }
 
-.row8 .cell {
+.row8 .cell8 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row8 .cell: nth-of-type(2) {
+.row8 .cell8: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -262,18 +330,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row9 .cell {
+.row9 .cell9 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row9 .cell: nth-of-type(2) {
+.row9 .cell9: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -283,18 +351,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row10 .cell {
+.row10 .cell10 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row10 .cell: nth-of-type(2) {
+.row10 .cell10: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -304,18 +372,18 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row11 .cell {
+.row11 .cell11 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row11 .cell: nth-of-type(2) {
+.row11 .cell11: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
@@ -325,25 +393,121 @@ body {
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.row12 .cell {
+.row12 .cell12 {
   width: 100%;
-  background: #e6e6e6;
-  padding: 14px;
-  border-bottom: solid 1px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
 }
 
-.row12 .cell: nth-of-type(2) {
+.row12 .cell12: nth-of-type(2) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+
+.row13 {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row13 .cell13 {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
+}
+
+.row13 .cell13: nth-of-type(2) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.row14 {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row14 .cell14 {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
+}
+
+.row14 .cell14: nth-of-type(2) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.row15 {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row15 .cell15 {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
+}
+
+.row15 .cell15: nth-of-type(2) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.row16 {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row16 .cell16 {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
+}
+
+.row16 .cell16: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
 
 
 
-
+.footer {
+   position:;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: #e9e9e9;
+   text-align: center;
+   height: 50;
+   padding-top: 20px;
+   font-size: 14px;
+}
 
 
 
