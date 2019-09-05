@@ -22,6 +22,9 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.button1{
+  border-radius: 30px;
+}
 .sidebar {
   height: 100%;
   width: 0px;
@@ -40,6 +43,7 @@ body {
   height: 20px;
   margin-top: 5px;
    padding-left: 10px;
+   padding-right: 30px;
 }
 
 .sidebar a {
@@ -54,7 +58,7 @@ body {
 
 .sidebar a:hover {
   color: gray;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  d
 }
  
 
@@ -94,6 +98,7 @@ body {
 #main {
   transition: margin-left .5s;
   padding: 5px;
+  color: #696969;
 }
 
 
@@ -107,7 +112,7 @@ body {
   flex-direction: row;
   height: 35px;
   padding-left: 10px;
-  margin-left: -200px;
+  margin-left: -150px;
   
 }
 
@@ -188,7 +193,7 @@ body {
 .row2 .cell2 {
   width: 100%;
   background: #fff;
-  padding: 5px;
+  padding: 0px;
   border-bottom: solid 1px lightgray;
 }
 
@@ -197,6 +202,26 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.row2 .cell2{
+ background-color: white;
+  border: none;
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  padding-right: 250px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.row2 .cell2:hover{
+ background-color: #f2f2f2;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14),0 15px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 .row3 {
@@ -220,6 +245,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row3:hover{
+  padding: 1px;
+  cursor: pointer;
+} 
+
 .row4 {
   display: flex;
   flex-wrap: no-wrap;
@@ -240,6 +270,10 @@ body {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
+.main-content .row4:hover{
+  padding: 1px;
+  cursor: pointer;
+} 
 
 .row5 {
   display: flex;
@@ -260,6 +294,11 @@ body {
 .row5 .cell5: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row5:hover{
+  padding: 1px;
+  cursor: pointer;
 }
 
 .row6 {
@@ -283,6 +322,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row6:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row7 {
   display: flex;
   flex-wrap: no-wrap;
@@ -302,6 +346,11 @@ body {
 .row7 .cell7: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row7:hover{
+  padding: 1px;
+  cursor: pointer;
 }
 
 .row8 {
@@ -325,6 +374,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row8:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row9 {
   display: flex;
   flex-wrap: no-wrap;
@@ -344,6 +398,11 @@ body {
 .row9 .cell9: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row9:hover{
+  padding: 1px;
+  cursor: pointer;
 }
 
 .row10 {
@@ -367,6 +426,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row10:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row11 {
   display: flex;
   flex-wrap: no-wrap;
@@ -388,6 +452,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row11:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row12 {
   display: flex;
   flex-wrap: no-wrap;
@@ -407,6 +476,11 @@ body {
 .row12 .cell12: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row12:hover{
+  padding: 1px;
+  cursor: pointer;
 }
 
 
@@ -431,6 +505,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row13:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row14 {
   display: flex;
   flex-wrap: no-wrap;
@@ -450,6 +529,11 @@ body {
 .row14 .cell14: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row14:hover{
+  padding: 1px;
+  cursor: pointer;
 }
 
 .row15 {
@@ -473,6 +557,11 @@ body {
   border-left: 1px solid lightgray;
 }
 
+.main-content .row15:hover{
+  padding: 1px;
+  cursor: pointer;
+}
+
 .row16 {
   display: flex;
   flex-wrap: no-wrap;
@@ -492,6 +581,11 @@ body {
 .row16 .cell16: nth-of-type(2) {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.main-content .row16:hover{
+  padding:1px;
+  cursor: pointer;
 }
 
 
